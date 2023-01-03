@@ -1,0 +1,19 @@
+@import './colors';
+@import './globalClasses';
+@import './animations';
+
+.border{
+     width: 60%;
+     transition: 2s;
+     border: 5px solid #a16106;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     .contactUs{
+          background: yellowgreen;
+          width: 90%;
+          margin: 10% 0;
+     }
+     
+}

@@ -1,0 +1,198 @@
+@import './colors';
+@import './globalClasses';
+
+.Header{
+     box-sizing: border-box;
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     overflow: hidden;
+     position: -webkit-sticky; /* Safari */
+     position: sticky;
+     top: calc(100vw * -0.02);
+     .ContactBar{
+          width: 100%;
+          background:#353839;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          aspect-ratio: 100/2;
+          .QuickContact{
+               width: 45%;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               dl{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+
+                    .Col{
+                         width: 30%;
+                         display: flex;
+                         flex-direction: row;
+                         align-items: center;
+                         justify-content: center;
+                         dt{
+                              display: flex;
+                              align-items: center;
+                              vertical-align: center;
+                              justify-content: center;
+                              i{
+                                   font-size: 22px;
+                                   vertical-align: center;
+                                   display: flex;
+                                   align-items: center;
+                                   margin-right: 5px;
+                              }
+                              .green{
+                                   color: #4ECB71;
+                                   
+                              }
+                              .wood{
+                                   color: #FFC87C;
+                              }
+                         }
+                         dd{
+                              font-size: 16px;
+                              color: #FFFBFB;
+                              font-weight: 600;
+                              line-height: 12.52px;
+                              letter-spacing: 1px;
+                         }
+          
+                    }
+                    
+               }
+
+          }
+          .SocialMedia{
+               width: 40%;
+               display: flex;
+               flex-direction: row;
+               align-items: center;
+               justify-content: center;
+               span{
+                    width: 5%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    margin:0 10px;
+                    padding: 2.5px;
+                    &:hover{
+                         background: #a16106;
+                         color: violet;
+                         border-radius: 30%;
+                         cursor: pointer;
+                         transition: 0.5s;
+                         padding: 5px;
+                         i{
+                              font-size: 15px;
+                         }
+                    }
+                    i{
+                         display: flex;
+                         align-items: center;
+                         justify-content: center;
+                         font-size: 22px;
+                         color: #FFFBFB;
+                    }
+               }
+          }
+
+     }
+     .MainNavBar{
+          width: 100%;
+          aspect-ratio: 100/5;
+          background: #383636a6;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          .CompanyLogo{
+               width: 42.5%;
+               display: flex;
+               flex-direction: row;
+               justify-content: center;
+               align-items: center;
+               .title{
+                    width: 70%;
+               }
+               .Logo{
+                    width: 30%;
+                    display: flex;
+                    align-items: center;
+                    img{
+                         width: 80px;
+                         aspect-ratio: 100/95;
+                         border-radius: 50%;
+                    }
+               }
+          }
+          .Navbar{
+               width: 42.5%;
+               display: flex;
+               flex-direction: row;
+               justify-content: flex-end;
+               ul{
+                    width: 60%;
+                    display: flex;
+                    list-style-type: none;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    li{
+                         width: 22.5%;
+                         margin: 5px 0;
+                         padding: 5px 0;
+                         display: flex;
+                         align-items: center;
+                         justify-content: center;
+                         font-size: 16px;
+                         font-weight: 600;
+                         letter-spacing: 1px;
+                         color: #f0ddc3;
+                         &:hover{
+                              background: #a16106;
+                              color: white;
+                              cursor: pointer;
+                              border-radius: 5px;
+                              transition: 0.6s;
+                         }
+                    }
+                    .ContactUs{
+                         //border: 1px solid #a16106;
+                         border: 1px solid #ff9909;
+                         border-radius: 4px;
+                         margin-left: 5%;
+                         &:hover{
+                              background: #a16106;
+                              color: white;
+                              cursor: pointer;
+                         }
+                    }
+
+               }
+          }
+     }
+     .displayNotMe{
+          display: none;
+     }
+     .displayMe{
+          position: fixed;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          top: 0;
+          background-color: rgba(107, 57, 16, 0.644);
+          width: 100%;
+          height: 100%;
+          z-index: 10;
+          transition: 2s;
+     }
+}
