@@ -2,16 +2,21 @@
 .border {
   width: 60%;
   transition: 2s;
-  border: 5px solid #a16106;
+  border: 3px solid #a16106;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 .border .contactUs {
-  background: yellowgreen;
-  width: 90%;
-  margin: 10% 0;
+  background: rgb(222, 250, 137);
+  width: 95%;
+  margin: 5% 0;
+  aspect-ratio: 100/50;
+  overflow: scroll;
+}
+.border .contactUs::-webkit-scrollbar {
+  display: none;
 }
 
 .Header {
@@ -195,11 +200,39 @@
   align-items: center;
   justify-content: center;
   top: 0;
-  background-color: rgba(107, 57, 16, 0.644);
+  background-color: rgba(54, 54, 54, 0.644);
   width: 100%;
   height: 100%;
   z-index: 10;
   transition: 2s;
+}
+.Header .displayMe .toggleButton {
+  background: #bd7107;
+  width: clamp(40px, 10%, 60px);
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5%;
+  border: 1px solid #bd7107;
+}
+.Header .displayMe .toggleButton i {
+  font-size: clamp(25px, 2.2vw, 50px);
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.Header .displayMe .toggleButton i:hover {
+  cursor: pointer;
+}
+.Header .displayMe .toggleButton:hover {
+  cursor: pointer;
+  background: white;
+}
+.Header .displayMe .toggleButton:hover i {
+  color: #bd7107;
 }
 
 .Home {
@@ -216,6 +249,28 @@
   width: 100%;
   aspect-ratio: 100/50;
   background: url("./components/Images/home_image1.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Home .Intro-section h1 {
+  color: rgb(255, 255, 255);
+  font-size: clamp(18px, 2.2vw, 40px);
+  font-weight: 600;
+}
+.Home .Intro-section h1 span {
+  background: #e94f08;
+  color: white;
+  padding: 0.2vw 1vw;
+  border-radius: 1.2rem;
+  font-size: clamp(18px, 1.8vw, 40px);
+}
+.Home .Intro-section p {
+  color: #22211f;
+  font-size: clamp(14px, 1.3vw, 24px);
+  font-weight: 600;
+  padding: 1%;
 }
 
 * {

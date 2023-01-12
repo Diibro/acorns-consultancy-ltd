@@ -4,7 +4,8 @@ const Home = () => {
   return (
     <div className='Home'>
       <div className='Intro-section'>
-        <h1>Welcome to Arcons Consultancy</h1>
+        <h1>Arcons Consultancy <span>brings all solutions</span></h1>
+        <p>Get the best design and all solutions to your constructions with our company</p>
       </div>
     </div>
   )

@@ -13,6 +13,29 @@
           width: 100%;
           aspect-ratio: 100/50;
           background: url('./components/Images/home_image1.jpg');
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          h1{
+               color: rgb(255, 255, 255);
+               font-size: clamp(18px, 2.2vw, 40px);
+               font-weight: 600;
+               span{
+                    background: #e94f08;
+                    color: white;
+                    padding: 0.2vw 1vw;
+                    border-radius: 1.2rem;
+                    font-size: clamp(18px, 1.8vw, 40px);
+
+               }
+          }
+          p{
+               color: #22211f;
+               font-size: clamp(14px, 1.3vw, 24px);
+               font-weight: 600;
+               padding: 1%;
+          }
      }
 }
 

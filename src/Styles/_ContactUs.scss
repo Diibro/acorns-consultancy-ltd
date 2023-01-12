@@ -5,15 +5,20 @@
 .border{
      width: 60%;
      transition: 2s;
-     border: 5px solid #a16106;
+     border: 3px solid #a16106;
      display: flex;
      flex-direction: column;
      align-items: center;
      justify-content: center;
      .contactUs{
-          background: yellowgreen;
-          width: 90%;
-          margin: 10% 0;
+          background: rgb(222, 250, 137);
+          width: 95%;
+          margin: 5% 0;
+          aspect-ratio: 100/50;
+          overflow: scroll;
+          &::-webkit-scrollbar{
+               display:none;
+          }
      }
      
 }
